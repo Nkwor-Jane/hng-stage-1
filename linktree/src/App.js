@@ -1,7 +1,10 @@
+import ProfilePage from "./components/ProfilePage";
+import "./styles/ProfilePage.css";
+
 function App() {
   return (
-    <div>
-      <h1>hwhat is happening</h1>
+    <div className="body">
+      <ProfilePage/>
     </div>
   );
 }
