@@ -26,7 +26,12 @@
     position: relative;
 }
 .image{
+    margin-top: 20px;
+}
+.my_image{
     cursor: pointer;
+    border-radius: 50%;
+    width: 150px;
 }
 h3{
     margin-top: 20px;
@@ -44,7 +49,7 @@ h3{
     background-color: #F4F5F7;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 22px;
     text-align: center;
     width: 100%;
     cursor: pointer;
@@ -59,8 +64,7 @@ button{
     line-height: 15px;
 }
 .links{
-    /* box-shadow: 0 1px 2px rgba(0,0,0,0.1); */
-    padding: 20px;
+    padding: 22px;
     width: 100%;
     background-color: #F4F5F7;
     text-align: center;
@@ -72,7 +76,7 @@ button{
 }
 .links:hover, .twitter-btn:hover{
     /* transition: box-shadow 0.3s ease-in-out; */
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 a{
     text-decoration: none;
@@ -83,7 +87,7 @@ a{
 
 }
 .icon{
-    background-image: url(../styles/back.png);
+    background-image: url(../images/back.png);
     padding: 15px;
     background-size: cover;
     cursor: pointer;
@@ -94,10 +98,41 @@ a{
 .icon:hover{
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
+footer{
+    width: 100%;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.social-icons img{
+    margin: 0 15px;
+    cursor: pointer;
+}
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 30px;
+}
 @media screen and (max-width: 760px){
     .icon{
-        background-image: url(../styles/menu.png);
+        background-image: url(../images/menu.png);
         padding: 20px;
         right: -1px;
+    }
+    .social-icons{
+        margin: 20px 0;
+    }
+    .logos{
+       flex-direction: column;
+
+    }
+    .logos div{
+        padding: 20px;
+
     }
 }
